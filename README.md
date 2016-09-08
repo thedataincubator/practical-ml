@@ -4,6 +4,8 @@ We offer a foundation in building intelligent business applications using machin
 
 All students should be come prepared with a laptop, in order to follow along with the presentations and to work exercises on their own.  It is best to have your laptop configured with Python and the data downloaded before the workshop starts.
 
+This repo will be updated with example code and exercises in the coming weeks.  Please remember to pull again before the conference starts.
+
 ## Configuration
 
 All of the code we present uses Python 2.7.  A number of libraries beyond the standard library are used.  We recommend using the conda package manager to install the same versions that we are using, in a manner that won't interfere with your system packages.
