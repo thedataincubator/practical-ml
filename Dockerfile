@@ -1,8 +1,12 @@
-FROM continuumio/anaconda3:4.1.1
+FROM continuumio/miniconda:4.0.5
 
-RUN conda env create -f environment.yml
-RUN source activate strata
-RUN aws s3 sync s3://tripdata/ anomaly/tripdata
+COPY environment.yml /
+RUN /bin/bash -c "conda env create -f environment.yml"
+RUN rm environment.yml
+RUN /bin/bash -c "source activate strata"
+COPY anomaly/tripdata /
+COPY download.sh /
+RUN bash download.sh
 
 EXPOSE 5000
 ENTRYPOINT echo

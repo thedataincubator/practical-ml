@@ -110,6 +110,3 @@ dependencies:
   - nb-conda==2.0.0
   - nb-conda-kernels==2.0.0
   - prompt-toolkit==1.0.3
-  - awscli
-prefix: /home/rschroll/miniconda2/envs/strata
-
