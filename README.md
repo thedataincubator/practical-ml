@@ -6,7 +6,7 @@ All students should be come prepared with a laptop, in order to follow along wit
 
 This repo will be updated with example code and exercises in the coming weeks.  Please remember to pull again before the conference starts.
 
-## Configuration
+## Installation
 
 All of the code we present uses Python 2.7.  A number of libraries beyond the standard library are used.  We recommend using the conda package manager to install the same versions that we are using, in a manner that won't interfere with your system packages.
 
@@ -23,6 +23,19 @@ or on Windows with
 ```
 > activate strata
 ```
+
+### Installation Alterative (Docker)
+
+If you run into trouble with teh above installation, consider using Docker.
+
+First, install [Docker](https://www.docker.com/) on your system.
+Then run these commands
+```
+docker build .
+docker run [image-name]
+```
+which will build a docker image from `Dockerfile` and run the above installation in a "virual" linux environment.
+It outputs "Success!" upon success.
 
 ## Data
 
