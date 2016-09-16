@@ -36,6 +36,7 @@ docker run [image-name]
 ```
 which will build a docker image from `Dockerfile` and run the above installation in a "virual" linux environment.
 It outputs "Success!" upon success.
+**Note:** this has been tested on OSX.
 
 ## Data
 
@@ -47,7 +48,7 @@ We will be using the [MovieLens 10M data set](http://grouplens.org/datasets/movi
 
 ### Anomaly Detection
 
-We will be using data from the New York CitiBike program.  This is available in a number of zip files at https://s3.amazonaws.com/tripdata/index.html.  If you have the [Amazon CLI tools](https://aws.amazon.com/cli/) installed, you can download them all with
+We will be using data from the New York CitiBike program.  This is available in a number of zip files at https://s3.amazonaws.com/tripdata/index.html.
 ```bash
-$ aws s3 sync s3://tripdata/ anomaly/tripdata
+$ ./download.sh
 ```
