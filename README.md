@@ -24,9 +24,9 @@ or on Windows with
 > activate strata
 ```
 
-### Installation Alterative (Docker)
+### Installation Alternative (Docker)
 
-If you run into trouble with teh above installation, consider using Docker.
+If you run into trouble with the above installation, consider using Docker.
 
 First, install [Docker](https://www.docker.com/) on your system.
 Then run these commands
@@ -34,7 +34,7 @@ Then run these commands
 docker build .
 docker run [image-name]
 ```
-which will build a docker image from `Dockerfile` and run the above installation in a "virual" linux environment.
+This will build a docker image from `Dockerfile` and automatically run conda installation in a "virtual" Linux environment.
 It outputs "Success!" upon success.
 **Note:** this has been tested on OSX.
 
@@ -48,7 +48,7 @@ We will be using the [MovieLens 10M data set](http://grouplens.org/datasets/movi
 
 ### Anomaly Detection
 
-We will be using data from the New York CitiBike program.  This is available in a number of zip files at https://s3.amazonaws.com/tripdata/index.html.
+We will be using data from the New York CitiBike program.  This is available in a number of zip files at https://s3.amazonaws.com/tripdata/index.html.  They can be easily downloaded with the provided script:
 ```bash
 $ ./download.sh
 ```
