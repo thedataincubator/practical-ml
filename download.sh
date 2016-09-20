@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 wget http://tripdata.s3.amazonaws.com/201307-citibike-tripdata.zip -P anomaly/tripdata/.
 wget http://tripdata.s3.amazonaws.com/201308-citibike-tripdata.zip -P anomaly/tripdata/.
