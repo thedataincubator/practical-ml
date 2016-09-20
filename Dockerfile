@@ -9,5 +9,4 @@ COPY download.sh /
 RUN bash download.sh
 
 EXPOSE 5000
-ENTRYPOINT echo
-CMD "Success!"
+ENTRYPOINT echo "Success!"
