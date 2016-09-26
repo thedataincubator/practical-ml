@@ -66,3 +66,7 @@ If you have installed the docker container, the script can be run like so:
 ```
 docker run -v <absolute local path to this directory>:/mnt/local <image-name> /bin/sh -c 'cd /mnt/local && ./download.sh'
 ```
+
+## Discussion
+
+You can join our [gitter room](https://gitter.im/strata-ml/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) to discuss the projects with your fellow students.
