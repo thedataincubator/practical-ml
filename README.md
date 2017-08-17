@@ -10,7 +10,12 @@ This repo will be updated with example code and exercises in the coming weeks.  
 
 All of the code we present uses Python 2.7.  A number of libraries beyond the standard library are used.  We recommend using the conda package manager to install the same versions that we are using, in a manner that won't interfere with your system packages.  Alternatively, you can create a docker container from the provided Dockerfile that will contain all the necessary Python modules.
 
-### Conda
+### Clone the repo
+```bash
+$ git clone https://github.com/thedataincubator/strata-practical-ml.git
+```
+
+### Conda Option
 
 You may install either the full [Anaconda Package Manager](https://docs.continuum.io/anaconda/install) or the smaller [Miniconda system](http://conda.pydata.org/docs/install/quick.html).  The former will provide you with over 720 packages, ready to use; the latter will makes it easy to download them when needed.  Once one of these are installed, you can install the packages we will be using into a separate environment with
 ```bash
@@ -26,7 +31,7 @@ or on Windows with
 > activate strata
 ```
 
-### Docker
+### Docker Option
 
 If you run into trouble with the above installation, consider using Docker.
 
@@ -54,7 +59,13 @@ All of the material will use real-world data sets.  We recommend that you downlo
 
 ### Recommendation Engine
 
-We will be using the [MovieLens 10M data set](http://grouplens.org/datasets/movielens/), assembled by the University of Minnesota.  The data are available in a single 63 MB zip file, available at http://files.grouplens.org/datasets/movielens/ml-10m.zip.
+We will be using the [MovieLens 10M data set](http://grouplens.org/datasets/movielens/), assembled by the University of Minnesota.  The data are available in a single 63 MB zip file, available at http://files.grouplens.org/datasets/movielens/ml-10m.zip. Download the zipfile into the recommendation directory, and unzip as follows:
+
+```bash
+$ cd recommendation
+$ wget http://files.grouplens.org/datasets/movielens/ml-10m.zip
+$ unzip ml-10m.zip
+```
 
 ### Anomaly Detection
 
